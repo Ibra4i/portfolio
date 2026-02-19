@@ -19,7 +19,7 @@ export default function Hero() {
           ideas, both professionally and in my personal time.
         </p>
         <p className="hero-about mt-4 text-gray-100 max-w-3xl mx-auto">
-          I specialize in Python and C#, and have experience with many other technologies.
+          I specialize in C#, and have experience with many other technologies.
         </p>
       </div>
       <TechStack />
