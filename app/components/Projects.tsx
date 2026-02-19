@@ -18,7 +18,7 @@ const sample: Array<any> = [
     description:
       "Frontend Implementation of Simulation and Reachability: A Contribution to the ECDAR Project.",
     tags: ["Java", "JavaFX", "gRPC", "Rust", "UI testing"],
-    link: "/projects/ecdar.pdf",
+    link: "/Projects/ecdar.pdf",
   },
   {
     title: "Collaboration with Migatronic",
@@ -26,7 +26,7 @@ const sample: Array<any> = [
     description:
       "For the bachelor's project, a collaboration with Migatronic to develop a machine learning algorithm for automatic evaluation of welding quality.",
     tags: ["Machine learning", "Python", "Web Development", "MATLAB"],
-    link: "/projects/migatronic.pdf",
+    link: "/Projects/migatronic.pdf",
   },
   {
     title: "Fullstack developer at Ad Fontes Society",
@@ -42,7 +42,7 @@ const sample: Array<any> = [
     description:
       "A personal meal planner project with focus on personal dietary goals and food waste that keep track of the food inventory, and generate meal plans and recipes with focus on the user’s dietary goals and minimizing food waste.",
     tags: ["Web Development", "C#", "Entity Framework", "React", "docker"],
-    link: "/projects/p7.pdf",
+    link: "/Projects/p7.pdf",
   },
   {
     title: "Acoustic Transmission of Images",
@@ -50,7 +50,7 @@ const sample: Array<any> = [
     description:
       "A transmission scheme based on acoustic signals, making it possible to perform an offline transmission of images of approx. 1,000 kb over 1,500 m.",
     tags: ["JavaScript", "C","Testing"],
-    link: "/projects/p2.pdf",
+    link: "/Projects/p2.pdf",
   }, 
   {
     title: "House chores application ",
@@ -66,7 +66,7 @@ const sample: Array<any> = [
     description:
       "A High-Level Programming Language for 3D-printing of Gears. Creating a new programming language and compiler that allows users to design and 3D-print custom gears with ease, using a simple and intuitive syntax.",
     tags: ["ANTLR", "C#","Syntax and Semantics","Compiler design"],
-    link: "/projects/p4.pdf",
+    link: "/Projects/p4.pdf",
   }, 
   
 ];
