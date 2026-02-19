@@ -37,7 +37,7 @@ const sample: Array<any> = [
     link: "#adFontes",
   },
   {
-    title: "Fullstack developer at Ad Fontes Personal Meal Planner",
+    title: "Personal Meal Planner",
     // subtitle: "(1/2026 - 2/2026)",
     description:
       "A personal meal planner project with focus on personal dietary goals and food waste that keep track of the food inventory, and generate meal plans and recipes with focus on the user’s dietary goals and minimizing food waste.",
