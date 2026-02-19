@@ -14,7 +14,7 @@ export default function Hero() {
         <h2 className="hero-sub mt-8 text-2xl font-bold">About Me</h2>
         <p className="hero-about mt-4 text-gray-100 max-w-3xl mx-auto">
           I am a software engineer with a masters degree in human-computer interaction (HCI).
-          I ave a great passion for learning and consistently strive to improve 
+          I have a great passion for learning and consistently strive to improve 
           and grow within my field. I enjoy exploring new technologies and experimenting with innovative 
           ideas, both professionally and in my personal time.
         </p>
