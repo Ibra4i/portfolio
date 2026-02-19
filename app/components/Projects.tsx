@@ -42,7 +42,7 @@ const sample: Array<any> = [
     description:
       "A personal meal planner project with focus on personal dietary goals and food waste that keep track of the food inventory, and generate meal plans and recipes with focus on the user’s dietary goals and minimizing food waste.",
     tags: ["Web Development", "C#", "Entity Framework", "React", "docker"],
-    link: "/Projects/p7.pdf",
+    link: "/Projects/P7.pdf",
   },
   {
     title: "Acoustic Transmission of Images",
