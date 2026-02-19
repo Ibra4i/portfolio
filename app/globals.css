@@ -24,3 +24,127 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Nav */
+.top-nav {
+  background: #1f2937;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.top-nav .nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+.top-nav .brand { font-weight: 700; }
+.top-nav .nav-links { list-style: none; display:flex; gap:18px; margin:0; padding:0 }
+.top-nav .nav-links a { color: #fff; text-decoration: none; font-weight:600 }
+
+/* Hero with gradient + light scribble texture approximation */
+.hero {
+  color: #fff;
+  padding: 56px 20px;
+  background: linear-gradient(180deg,#2b6cb0 0%, #7c3aed 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  background-image: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.06), transparent 10%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05), transparent 8%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 2px, transparent 2px 8px);
+  pointer-events: none;
+}
+.hero-inner { max-width: 1000px; margin: 0 auto; text-align:center; position:relative; }
+.hero-title { font-size: 3.2rem; margin: 0 0 10px 0; text-shadow: 0 4px 10px rgba(0,0,0,0.3) }
+.hero-links { display:flex; gap:18px; justify-content:center; margin: 12px 0 }
+.hero-links a { color: #e6f0ff; text-decoration: none; font-weight:600 }
+.hero-sub { margin-top: 28px; font-size: 1.6rem }
+.hero-about { max-width: 760px; margin: 8px auto 28px; color: rgba(255,255,255,0.95) }
+
+/* Sections */
+.main-content { max-width: 1200px; margin: -48px auto 80px; padding: 0 20px }
+.section-heading { text-align:center; font-size:2rem; margin: 36px 0 20px; color:#111827 }
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 8px 24px rgba(2,6,23,0.08) }
+.project-card { min-height: 260px; display:flex; flex-direction:column; justify-content:space-between }
+.card-title { font-size:1.15rem; margin:0 0 8px; font-weight:700 }
+.card-sub { margin:0 0 8px; font-weight:700; color:#111827 }
+.card-desc { color:#374151; font-size:0.95rem }
+.card-tags { margin-top:12px; display:flex; gap:8px; flex-wrap:wrap }
+.tag { background:#f3f4f6; padding:6px 10px; border-radius:999px; font-size:0.85rem }
+
+/* About & Work */
+.about-body { max-width:850px; margin:0 auto; color:#4b5563; text-align:center }
+.work-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px }
+.work-card { min-height:120px }
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr) }
+  .work-grid { grid-template-columns: 1fr }
+}
+@media (max-width: 600px) {
+  .projects-grid { grid-template-columns: 1fr }
+  .hero-title { font-size:2rem }
+  .top-nav .nav-inner { padding: 10px }
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #08080a; color: #e6e6e6 }
+  .card { background: #0b1020; box-shadow: 0 8px 24px rgba(0,0,0,0.6) }
+  .section-heading { color: #e6e6e6 }
+  .card-title { color: #f8fafc }
+  .card-sub { color: #e6edf7 }
+  .card-desc { color: #9aa6b2 }
+  .tag { background: rgba(255,255,255,0.06); color: #e6eef6 }
+}
+
+/* Allow toggling dark mode via body.dark-mode (for theme toggle) */
+body.dark-mode {
+  background: #08080a;
+  color: #e6e6e6;
+}
+body.dark-mode .card {
+  background: #0b1020;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+body.dark-mode .section-heading { color: #e6e6e6 }
+body.dark-mode .card-title { color: #f8fafc }
+body.dark-mode .card-sub { color: #e6edf7 }
+body.dark-mode .card-desc { color: #9aa6b2 }
+body.dark-mode .tag { background: rgba(255,255,255,0.06); color: #e6eef6 }
+
+/* If user explicitly chose light, force light-mode overrides (placed after prefers-color-scheme rules) */
+body.light-mode { background: #ffffff; color: #171717 }
+body.light-mode .card { background: #ffffff; box-shadow: 0 8px 24px rgba(2,6,23,0.08) }
+body.light-mode .section-heading { color: #111827 }
+body.light-mode .card-title { color: #111827 }
+body.light-mode .card-sub { color: #111827 }
+body.light-mode .card-desc { color: #374151 }
+body.light-mode .tag { background:#f3f4f6; color: #111827 }
+
+/* Remove default focus outline and tap highlight for clickable cards/controls */
+a:focus, a:focus-visible, button:focus, button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove mobile tap highlight */
+a, button, .card {
+  -webkit-tap-highlight-color: transparent;
+}
